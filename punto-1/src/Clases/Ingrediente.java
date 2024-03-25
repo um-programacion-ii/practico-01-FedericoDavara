@@ -27,6 +27,15 @@ public class Ingrediente {
         this.cantidad = cantidad;
     }
 
+    public void sacar(int cantidad) {
+
+        if (this.cantidad >= cantidad) {
+            this.cantidad -= cantidad;
+        }else{
+            System.out.println("No hay suficiente cantidad de " + this.nombre + " para sacar.");
+        }
+    }
+
     @Override
     public String toString() {
         return "Ingrediente{" +

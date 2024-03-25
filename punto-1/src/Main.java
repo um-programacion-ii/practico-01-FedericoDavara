@@ -1,3 +1,4 @@
+import Clases.Despensa;
 import Clases.Ingrediente;
 
 public class Main {
@@ -10,5 +11,13 @@ public class Main {
         ingrediente1.setNombre("Mostaza");
         ingrediente1.setCantidad(40);
         System.out.println(ingrediente1);
+
+        Despensa despensa = new Despensa();
+        despensa.addIngrediente(ingrediente);
+        despensa.addIngrediente(ingrediente1);
+        despensa.getIngrediente("Mayonesa", 10);
+        despensa.getIngrediente("Mostaza", 50);
+        System.out.println(despensa);
     }
+
 }
