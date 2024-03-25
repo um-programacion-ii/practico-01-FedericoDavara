@@ -2,35 +2,36 @@ package Clases;
 
 public class Ingrediente {
     private String nombre;
-    private double precio;
+    private int cantidad;
 
-    public Ingrediente(String nombre, double precio) {
+    public Ingrediente(String nombre, int cantidad) {
         this.nombre = nombre;
-        this.precio = precio;
+        this.cantidad = cantidad;
     }
-
     public Ingrediente() {
-
     }
 
     public String getNombre() {
-        return this.nombre;
-    }
-
-    public double getPrecio() {
-        return this.precio;
+        return nombre;
     }
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
-    public void setPrecio(double precio) {
-        this.precio = precio;
+    public int getCantidad() {
+        return cantidad;
+    }
+
+    public void setCantidad(int cantidad) {
+        this.cantidad = cantidad;
     }
 
     @Override
     public String toString() {
-        return this.nombre + " $" + this.precio;
+        return "Ingrediente{" +
+                "nombre='" + nombre + '\'' +
+                ", cantidad=" + cantidad +
+                '}';
     }
 }
