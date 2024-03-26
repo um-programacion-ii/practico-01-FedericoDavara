@@ -3,11 +3,20 @@ package Clases;
 import java.util.List;
 
 public class Receta {
+    private String nombre;
     private double tiempoCoccion;
     private List<Ingrediente> ingredientes;
     private String preparacion;
 
     public Receta() {
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public double getTiempoCoccion() {

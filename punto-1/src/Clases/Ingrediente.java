@@ -31,6 +31,7 @@ public class Ingrediente {
 
         if (this.cantidad >= cantidad) {
             this.cantidad -= cantidad;
+            System.out.println("Se sacaron " + cantidad + " de " + this.nombre + " de la despensa.");
         }else{
             System.out.println("No hay suficiente cantidad de " + this.nombre + " para sacar.");
         }
